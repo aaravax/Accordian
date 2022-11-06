@@ -1,0 +1,25 @@
+.accordian {
+    text-align: center;
+    
+    
+}
+.accord {
+    text-align: center;
+    color: navy;
+    width: 600px;
+    display: none;
+}
+.drop{
+    width: 600px;
+    height: 40px;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.show{
+    background-color: rgb(246, 221, 200);
+}

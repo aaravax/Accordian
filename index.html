@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accordian.css">
+</head>
+<body style="background-color: peachpuff;">
+    <div class = "parent" >
+    <div class = "accordian"><h2 class = "drop">Click</h2></div>
+    <div class = "accord">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tenetur, sequi sunt impedit culpa ab explicabo quo ex inventore repudiandae, repellat magni, nihil sed est libero possimus error? Voluptate, corporis?</div>
+</div>
+<div class = "parent" >
+    <div class = "accordian"><h2 class = "drop">Click</h2></div>
+    <div class = "accord">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tenetur, sequi sunt impedit culpa ab explicabo quo ex inventore repudiandae, repellat magni, nihil sed est libero possimus error? Voluptate, corporis?</div>
+</div>
+<div class = "parent" >
+    <div class = "accordian"><h2  class = "drop">Click</h2></div>
+    <div class = "accord">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tenetur, sequi sunt impedit culpa ab explicabo quo ex inventore repudiandae, repellat magni, nihil sed est libero possimus error? Voluptate, corporis?</div>
+</div>
+</body>
+<script>
+var a = document.getElementsByClassName("accordian")
+console.log(a)
+ for (var i = 0; i < a.length; i++ ){
+    a[i].addEventListener("click", function(){
+ var b = this.nextElementSibling
+ if( b.style.display == "none" ){
+     b.style.display = "block"
+ }
+ else {
+     b.style.display = "none"
+ }
+
+})
+ }
+1
+</script>
+</html>
